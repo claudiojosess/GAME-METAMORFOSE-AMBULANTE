@@ -1,0 +1,2 @@
+Verificacao estatica: Novo Jogo e Reiniciar carregam Main. Inicio libera Time.timeScale e movimento sem chamar microfone. Continuar reativa movimento. Cenas habilitadas no build. Quatro lagos nas cenas e lagos separados nos prefabs.
+Sem execucao no Unity; validacao de runtime pendente.

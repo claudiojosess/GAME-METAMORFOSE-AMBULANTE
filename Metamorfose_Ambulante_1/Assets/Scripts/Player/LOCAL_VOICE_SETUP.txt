@@ -1,0 +1,20 @@
+AEROMORPH — VOZ LOCAL PARA WINDOWS
+
+Como funciona
+- Microfone do Windows -> gatilho de energia -> janela curta de áudio -> classificador local -> transformação no Unity.
+- Não usa internet, Web Speech nem plugin WebGL.
+- A janela inicial padrão foi reduzida para cerca de 0,30 s para reagir durante o começo da palavra.
+
+Calibração para várias pessoas
+1. Abra a cena no Unity e marque Calibration Mode no VoiceInputManager.
+2. Entre em Play com microfone disponível.
+3. A primeira pessoa fala “sólido” e pressione F1 para registrar amostras; repita algumas vezes.
+4. Faça o mesmo com “líquido” (F2) e “gasoso” (F3).
+5. Repita o processo com cada pessoa que deverá jogar, registrando todas as vozes no mesmo computador/arquivo de calibração.
+6. Use diferentes volumes e distâncias normais, mas grave em ambiente relativamente silencioso.
+7. Desative Calibration Mode para jogar. As amostras são salvas em Application.persistentDataPath/aeromorph_voice_templates.json.
+
+Atenção
+- Este é um classificador local leve por modelos de áudio, não um modelo neural pré-treinado nem reconhecimento de fala completo. Não consegue garantir generalização para toda pessoa sem amostras representativas.
+- O tempo de 0,30 s prioriza velocidade; sons muito curtos ou ruído podem gerar falso reconhecimento. Se acontecer, aumente captureDurationSeconds para 0,36–0,42 e/ou minimumConfidence para 0,72–0,78.
+- Para maior robustez real entre falantes, o próximo salto técnico é treinar um classificador neural com gravações de várias pessoas e ruído de fundo, exportado para ONNX e executado localmente.

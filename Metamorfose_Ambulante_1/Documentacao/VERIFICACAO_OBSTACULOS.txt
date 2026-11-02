@@ -1,0 +1,4 @@
+Main: 15 modelos distintos em 16 obstaculos; estados {0: 6, 1: 5, 2: 5}; gatilhos OK.
+MenuPrincipal: 15 modelos distintos em 16 obstaculos; estados {0: 6, 1: 5, 2: 5}; gatilhos OK.
+Todos os scripts de mecanicas permanecem identicos a versao anterior.
+Validacao estatica, sem execucao no Unity.

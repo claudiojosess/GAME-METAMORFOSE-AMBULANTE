@@ -1,0 +1,35 @@
+Verificação estática dos arquivos; não substitui importação e execução no Unity.
+
+MenuPrincipal.unity: 4506 serialized objects/components, references checked
+Main.unity: 4506 serialized objects/components, references checked
+Trecho_06.prefab: 479 serialized objects/components, references checked
+Trecho_07.prefab: 415 serialized objects/components, references checked
+ET_Tres_Formas.prefab: 284 serialized objects/components, references checked
+Obstaculo_0_0.prefab: 64 serialized objects/components, references checked
+Obstaculo_2_2.prefab: 62 serialized objects/components, references checked
+Obstaculo_1_1.prefab: 33 serialized objects/components, references checked
+Obstaculo_0_4.prefab: 64 serialized objects/components, references checked
+Obstaculo_2_1.prefab: 43 serialized objects/components, references checked
+Obstaculo_0_3.prefab: 64 serialized objects/components, references checked
+Morro_Proximo.prefab: 4 serialized objects/components, references checked
+Arvore.prefab: 18 serialized objects/components, references checked
+Obstaculo_1_3.prefab: 44 serialized objects/components, references checked
+Obstaculo_2_0.prefab: 64 serialized objects/components, references checked
+Obstaculo_1_4.prefab: 38 serialized objects/components, references checked
+Obstaculo_2_3.prefab: 56 serialized objects/components, references checked
+Trecho_09.prefab: 508 serialized objects/components, references checked
+Obstaculo_2_4.prefab: 91 serialized objects/components, references checked
+Trecho_02.prefab: 411 serialized objects/components, references checked
+Obstaculo_0_1.prefab: 64 serialized objects/components, references checked
+Trecho_03.prefab: 481 serialized objects/components, references checked
+Trecho_05.prefab: 403 serialized objects/components, references checked
+Trecho_01.prefab: 315 serialized objects/components, references checked
+Montanhas.prefab: 18 serialized objects/components, references checked
+Trecho_00.prefab: 353 serialized objects/components, references checked
+Obstaculo_0_2.prefab: 52 serialized objects/components, references checked
+Trecho_04.prefab: 391 serialized objects/components, references checked
+Obstaculo_1_2.prefab: 36 serialized objects/components, references checked
+Trecho_08.prefab: 417 serialized objects/components, references checked
+Obstaculo_1_0.prefab: 32 serialized objects/components, references checked
+
+Nenhuma referência local ou GUID de asset ausente nas cenas/prefabs.

@@ -1,0 +1,5 @@
+Serra_Recortada_B.asset: 3185 vertices, 6144 triangulos; indices, normais e orientacao OK.
+Morro_Proximo.asset: 1089 vertices, 2048 triangulos; indices, normais e orientacao OK.
+Serra_Recortada_A.asset: 3185 vertices, 6144 triangulos; indices, normais e orientacao OK.
+Scripts de gameplay: sem alteracoes.
+Validacao estatica; sem execucao no Unity.

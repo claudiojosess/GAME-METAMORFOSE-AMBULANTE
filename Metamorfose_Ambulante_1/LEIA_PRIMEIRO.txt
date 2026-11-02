@@ -1,0 +1,173 @@
+ATUALIZAÇÃO — INÍCIO DA CORRIDA, LAGOS E CÉU CLARO
+
+Abra esta versão como projeto separado no Unity Hub, com Unity 6000.6.0f1.
+Abra Assets/Scenes/Main.unity, aperte Play e clique em Novo Jogo.
+
+NOVO JOGO
+O botão agora carrega Main como uma partida limpa. Ao iniciar, o menu retira
+a pausa e habilita explicitamente o controlador do ET. Reiniciar usa o mesmo
+fluxo; Continuar habilita novamente o movimento da partida pausada.
+O reconhecimento de voz não é mais iniciado dentro desse fluxo. Para usar
+voz, vá a Opções > Ativar Microfone. O teclado funciona independentemente dele.
+O Console mostra: "Metamorfose: corrida iniciada; movimento habilitado e
+Time.timeScale = 1." Essa mensagem confirma que o menu liberou a partida.
+Se o jogo continuar parado, envie o primeiro erro vermelho completo do
+Console e informe se essa mensagem aparece ao clicar em Novo Jogo.
+
+PAISAGEM
+A faixa contínua de água foi removida. Há lagos ovais separados, com margens
+e pedras, nos trechos 0, 3, 6 e 9. Os trechos futuros usam os mesmos prefabs.
+O céu está mais claro, com nuvens claras e sol pequeno próximo ao horizonte.
+Montanhas, vegetação, claridade do cenário e os 15 obstáculos foram mantidos.
+
+VALIDAÇÃO
+Foram conferidas referências, lista de cenas, fluxo de início e separação dos
+lagos. Não houve execução no Unity aqui; teste Novo Jogo, Esc/Continuar e
+Reiniciar no seu Editor. Não misture os arquivos com versões anteriores.
+
+ATUALIZAÇÃO — CENÁRIO CLARO E 15 OBSTÁCULOS
+
+Abra como projeto separado no Unity Hub (Unity 6000.6.0f1), carregando
+Assets/Scenes/Main.unity. O cenário continua salvo antes do Play.
+
+ILUMINAÇÃO
+O céu e o sol baixo do pôr do sol foram mantidos. A luz ambiente foi elevada,
+com iluminação de preenchimento diurna para clarear personagem, estrada,
+árvores e obstáculos. O asfalto e o chão ficaram mais claros.
+Para ajustar a claridade, selecione Luz_de_Preenchimento_Diurna na Hierarchy
+e altere Intensity. A iluminação principal e o céu podem ser editados separadamente.
+
+OBSTÁCULOS
+Há 15 modelos (5 para cada forma), presentes nas cenas e nos trechos futuros.
+Sólido: muro fraturado, caixotes, rochas, colmeia mineral e barris.
+Líquido: comporta, prensa hidráulica, tubos, persiana e ponte de válvulas.
+Gasoso: filtro, turbina, grade eletromagnética, dutos e anel iônico.
+Laranja/cubo = sólido; azul/gota = líquido; violeta/moléculas = gasoso.
+Os movimentos das prensas, turbinas e anéis são visuais: a regra continua
+sendo usar a forma correta ou desviar. Os controles, gatilhos, menus, Game Over
+e reinício permanecem com os mesmos scripts aprovados.
+
+VALIDAÇÃO
+Verificados referências, colisores de gatilho, distribuição dos 15 modelos
+e integridade do ZIP. Não foi possível executar/renderizar no Unity aqui.
+
+ATUALIZAÇÃO VISUAL — PÔR DO SOL
+
+Abra esta pasta como projeto separado no Unity Hub, na versão 6000.6.0f1.
+Abra Assets/Scenes/Main.unity. As duas cenas receberam a nova paisagem.
+
+NOVIDADES
+- Serras distantes com malhas de relevo irregular, encostas e cristas.
+- Morros menores perto da estrada, presentes também nos novos trechos da corrida.
+- Céu com gradiente de pôr do sol, disco solar baixo, halo e nuvens em camadas.
+- Luz solar quente, sombras e névoa para separar os planos da paisagem.
+- Todos os scripts das mecânicas são idênticos aos da versão aprovada.
+
+EDIÇÃO
+Assets/Materials/Ceu_PorDoSol.mat controla as cores, o tamanho e direção do
+sol, cobertura e velocidade das nuvens. O sol permanece na posição de pôr
+do sol; não foi acrescentado um ciclo completo de dia/noite.
+As nuvens são um efeito do shader do céu, com sombreamento que simula volume;
+não são nuvens volumétricas 3D. Não há texturas externas para baixar.
+Assets/Meshes contém as três malhas de relevo salvas como assets.
+Na Hierarchy, MONTANHAS agrupa as serras distantes. Os morros menores estão
+dentro de cada Trecho em CENARIO_EDITAVEL. Não possuem colisores na pista.
+Ao editar, ative Skybox/Efeitos na Scene para ver também o céu.
+
+VALIDAÇÃO
+Geometria, índices, normais, referências e integridade do ZIP foram verificados.
+Não houve renderização ou execução no Unity neste ambiente. Os novos shaders
+e malhas precisam ser confirmados após importação no seu Editor.
+
+METAMORFOSE AMBULANTE — PROJETO COMPLETO RECONSTRUÍDO
+Unity 6000.6.0f1 | Renderização Built-in | PC e base para WebGL
+
+ABERTURA — NÃO COPIE ASSETS PARA O PROJETO ANTIGO
+1. Extraia TODO o ZIP em uma pasta nova no computador.
+2. No Unity Hub, escolha Add/Adicionar projeto existente (ou Open/Abrir).
+3. Selecione a pasta Metamorfose_Ambulante_Completo_Reconstruido, que contém
+   Assets, Packages e ProjectSettings. Não selecione apenas Assets.
+4. Abra usando Unity 6000.6.0f1 e aguarde a importação.
+5. Em Project > Assets > Scenes, dê dois cliques em Main.unity.
+6. Clique na aba Scene. O cenário já está gravado no arquivo, antes do Play.
+   Se o enquadramento estiver fora da estrada, use o menu superior:
+   Metamorfose Ambulante > Enquadrar estrada e ET.
+7. Aperte Play e clique em NOVO JOGO.
+Não há comando de geração/conversão e não é preciso instalar URP.
+O nome da pasta extraída pode incluir outra pasta externa criada pelo descompactador.
+Escolha sempre a pasta que possui as três pastas de projeto acima.
+
+POR QUE ESTA VERSÃO É DIFERENTE
+A versão anterior dependia de executar uma conversão no Editor. Nesta versão,
+Main e MenuPrincipal já contêm objetos do cenário e personagem, com os modelos e materiais
+referenciados nos próprios arquivos. Há 320 metros iniciais de estrada e dez
+prefabs de trechos. SavedWorld somente prolonga a estrada durante a corrida.
+O personagem original das três formas foi mantido; a paisagem e a montagem dos
+obstáculos foram reconstruídas. O visual não é idêntico ao cenário anterior.
+Não foram incorporados personagens/arquivos de outras conversas.
+
+FUNCIONALIDADES
+- ET sólido, líquido e gasoso, com animações procedurais.
+- Corrida automática, três pistas, velocidade progressiva, pulo e abaixar.
+- Quinze prefabs de obstáculos distribuídos entre três estados necessários.
+- Acerto: quebra da barreira sólida ou passagem por líquido/gás.
+- Forma incorreta: Game Over, distância final, Reiniciar Agora e Menu Principal.
+- Retorno automático ao menu após 3,5 segundos no Game Over.
+- Novo Jogo, Continuar (partida pausada), Opções, Ajuda e Sair.
+- Opções de volume, tela cheia e microfone; título do menu com animação suave.
+- Reconhecimento de palavras por voz no Windows e ponte WebGL, com teclado.
+- HUD de distância/forma e quatro efeitos sonoros curtos.
+- Asfalto uniforme, faixas, vegetação, cercas, pedras, lago e montanhas.
+Continuar retoma a corrida pausada com Esc. Não carrega um save após fechar o jogo.
+
+CONTROLES
+A/D ou setas esquerda/direita: trocar de pista.
+Espaço ou seta cima: pular.
+S ou seta baixo: abaixar.
+1: sólido; 2: líquido; 3: gasoso.
+Esc: pausar/retomar.
+Voz: diga sólido, líquido ou gasoso; ative pelo menu Opções se necessário.
+A voz depende de suporte/permissão do sistema ou navegador. O jogo funciona
+com teclado quando não houver reconhecimento. A implementação Windows usa
+KeywordRecognizer; WebGL usa Web Speech API e pode depender de internet.
+
+EDIÇÃO DO CENÁRIO
+Abra Main.unity, selecione a aba Scene e expanda CENARIO_EDITAVEL na Hierarchy.
+Cada Trecho contém Asfalto, Terreno, linhas, árvores, cercas, lago e obstáculos.
+Mova/rotacione/redimensione os objetos pelo Inspector e salve a cena.
+Os materiais estão em Assets/Materials. O ET aparece como AeroMorph_ET.
+As formas líquida e gasosa são filhas desativadas: ative-as temporariamente
+para editar, voltando a deixar só a forma sólida ativa antes de jogar.
+As peças do cenário e do ET usam malhas primitivas nativas do Unity.
+As cenas Main e MenuPrincipal possuem cópias independentes do cenário.
+Alterações em uma delas não são transferidas automaticamente à outra.
+Os trechos presentes na cena são objetos independentes; as mudanças feitas
+neles não alteram os prefabs dos trechos FUTUROS. Edite também os prefabs em
+Assets/Prefabs/Trecho_02...09 para mudar os trechos que aparecem durante a corrida.
+Os obstáculos dentro dos trechos também são cópias editáveis independentes.
+Os prefabs individuais servem como biblioteca para arrastar novas peças.
+Mantenha as raízes dos trechos em intervalos de 32 metros, sem mudar suas escalas.
+Não remova SavedWorld, a câmera, GameManager, UIManager ou os controles do ET.
+Menu e HUD usam OnGUI: aparecem em Play e são editados nos scripts de UI.
+Não há Canvas, EventSystem, TextMeshPro ou pacote URP para instalar.
+
+TESTE RECOMENDADO NO UNITY
+1. Abra Main SEM Play e confirme ET, estrada, vegetação e obstáculos na Scene.
+2. Execute e clique Novo Jogo: a câmera deve acompanhar o ET e a distância subir.
+3. Teste A/D, pulo, abaixar e as três formas com 1/2/3.
+4. Esc pausa; Continuar retoma. Novo Jogo após pausa reinicia do começo.
+5. Acerte um obstáculo com a forma exigida e erre outro de propósito.
+6. Confira Game Over; teste Reiniciar Agora e o retorno automático ao menu.
+7. Percorra mais de 320 metros para verificar a continuidade dos novos trechos.
+8. Teste volume, tela cheia e microfone. Sem microfone, mantenha o teclado.
+9. Pare Play, feche/reabra Main: os objetos iniciais devem continuar na cena.
+
+LIMITES DA VALIDAÇÃO
+Os arquivos foram gerados e revisados sem Unity Editor disponível. Foram
+verificados YAML, IDs, GUIDs, hierarquias, referências, configurações e ZIP.
+Isso NÃO equivale a compilar, importar ou executar em Unity 6000.6.0f1.
+O relatório de verificação está em Documentacao. Se houver erro no seu Editor,
+envie o primeiro erro vermelho completo do Console e a cena que está aberta.
+Este ZIP é o projeto-fonte completo; não contém executável Windows pronto.
+Para gerar executável, use File > Build Profiles, escolha Windows e Build.
+As cenas MenuPrincipal e Main já estão incluídas em EditorBuildSettings.
